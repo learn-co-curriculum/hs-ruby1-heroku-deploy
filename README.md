@@ -2,13 +2,29 @@
   tags: heroku, deployment kids
   languages: ruby
 ---
-You will need to create an account with Heroku. It's free to sign up.
 
-Once you have an Heroku account, you'll want to make sure you have the most recent version of your application pushed up to git. We're going to follow instructions on Heroku's dev center found [here](https://devcenter.heroku.com/articles/git).
+#Let's deploy!! 
+Heroku is a platform that allows for easy Command Line deployment of Ruby applications through integration with github (as well as Node.js, Python, and Java and other languages).
 
-In terminal, first enter: `heroku create`. You should get a return that ends with `Git remote heroku added`.
+We're going to have you guys deploy your apps on our Flatiron School master Heroku account. 
 
-Then enter: ` git remote -v` which should return the remote configuration of the heroku repository. This Heroku repository is empty right after it's been created. You'll need to integrate it with git so it can access your code, `git push heroku master`. You should see a successfull deploy. You can enter `heroku open` which should open your app in the browser.
+We're going to follow instructions on Heroku's dev center found [here](https://devcenter.heroku.com/articles/git).
+
+In terminal, first enter: `heroku create`. 
+This should prompt you to enter an email address. You'll enter `domains@flatironschool.com`.
+Then you'll be prompted to enter a password. You'll use `33west26`. You should get a return that ends with `Git remote heroku added`.
+
+At this point, Heroku will have generated a really weird name for your app, something like `thawing-ravine-1908`. You'll want to tell your teacher your app name, so that he/she can add your email address that you used for Github as a collaborator for that project on Flatiron's Heroku account. 
+
+Once you have been added as a collaborator to your app on Heroku, you'll need to check your email. Heroku will have sent you an invitation to join, and you'll want to follow the steps when your prompted.
+
+Once your Heroku account is created, you'll need to click on your account in the top right corner, and select `account` from the dropdowns.
+
+You'll need to scroll down till you see SSH Keys. In terminal, you'll want to enter `pbcopy < ~/.ssh/id_rsa.pub`. This will take your SSH key that we generated for Github, and add it to your clipboard. You'll want to copy it into Heroku and then click `add key`. Now Heroku can identify you and access your code on Github.
+
+Then enter: ` git remote -v` which should return the remote configuration of the heroku repository. 
+
+This Heroku repository is empty right after it's been created. You will need to make sure Github has the most recent changes to your code, because Heroku takes your code from Githu. You'll need to integrate it with git so it can access your code, `git push heroku master`. You should see a successfull deploy. You can enter `heroku open` which should open your app in the browser.
 
 Once you're succesfully deployed, we need to use the [Heroku Scheduler Add On](https://addons.heroku.com/scheduler) in order to schedule your rake task. We're going to use the free version.
  In terminal you'll run `heroku addons:add scheduler:standard`. There are instructions [here](https://devcenter.heroku.com/articles/scheduler) from Heroku's dev center.
