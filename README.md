@@ -24,37 +24,37 @@ Because Heroku pulls your code from Github, it needs to authenticate your Github
 
 ####Mac SSH
 
-1. In terminal, enter: `ssh-keygen -t rsa -C "your_email@example.com"`
+**1.** In terminal, enter: `ssh-keygen -t rsa -C "your_email@example.com"`
 
-2. You will get promoted for a location to save the SSH key. Copy the file path provided in parentheses and paste it into terminal
+**2.** You will get promoted for a location to save the SSH key. Copy the file path provided in parentheses and paste it into terminal
 
 <img src="https://s3.amazonaws.com/after-school-assets/ssh-key-location.png">
 
-3. Keep the passphrase empty. When prompted, just hit enter. You'll be prompted twice, so leave both blank
+**3.** Keep the passphrase empty. When prompted, just hit enter. You'll be prompted twice, so leave both blank
 
-4. In terminal, enter `eval "$(ssh-agent -s)"`. You should see back something like `Agent pid 59566`
+**4.** In terminal, enter `eval "$(ssh-agent -s)"`. You should see back something like `Agent pid 59566`
 
-5 In terminal, enter `ssh-add ~/.ssh/id_rsa`
+**5.** In terminal, enter `ssh-add ~/.ssh/id_rsa`
 
-6 In terminal, enter `pbcopy < ~/.ssh/id_rsa.pub`. This command goes into the file where your SSH key is stored, and copies the contents into your clipboard.
+**6.** In terminal, enter `pbcopy < ~/.ssh/id_rsa.pub`. This command goes into the file where your SSH key is stored, and copies the contents into your clipboard.
 
-7 To add the SSH Key to Github, go to Settings (the gear icon in the top right corner on Github.com). Then select `SSH Keys` from the column on the left.
+**7.** To add the SSH Key to Github, go to Settings (the gear icon in the top right corner on Github.com). Then select `SSH Keys` from the column on the left.
 
-8 Select `Add SSH`
+**8.** Select `Add SSH`
 
 <img src="https://s3.amazonaws.com/after-school-assets/add-shh.png">
 
-9 Title your key `Flatiron` and then paste in the big box. Your SSH Key should end with your email address
+**9.** Title your key `Flatiron` and then paste in the big box. Your SSH Key should end with your email address
 
-10 Click `Add Key`
+**10.** Click `Add Key`
 
-11 To add your SSH Key to Heroku, on the left side when you're logged in, select the drop down arrow to the right of your email address and select `Manage Account`
+**11.** To add your SSH Key to Heroku, on the left side when you're logged in, select the drop down arrow to the right of your email address and select `Manage Account`
 
 <img src="https://s3.amazonaws.com/after-school-assets/heroku-ssh.png">
 
-12 Scroll down till you see SHH Keys and select `Edit` on the far right.
+**12.** Scroll down till you see SHH Keys and select `Edit` on the far right.
 
-13 Paste your Key and select `Save`
+**13.** Paste your Key and select `Save`
 
 ####Chromebook SSH
 
