@@ -1,8 +1,3 @@
----
-  tags: heroku, deployment, kids
-  languages: ruby
----
-
 ##Let's deploy!! 
 [Heroku](https://www.heroku.com/) is a platform that allows for easy Command Line deployment of Ruby applications through integration with Github (as well as Node.js, Python, and Java and other languages).
 
