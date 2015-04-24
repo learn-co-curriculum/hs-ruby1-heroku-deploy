@@ -1,5 +1,5 @@
 ---
-  tags: heroku, deployment kids
+  tags: heroku, deployment, kids
   languages: ruby
 ---
 
