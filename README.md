@@ -24,15 +24,15 @@ Because Heroku pulls your code from Github, it needs to authenticate your Github
 
 ####Mac SSH
 
-1 In terminal, enter: `ssh-keygen -t rsa -C "your_email@example.com"`
+1. In terminal, enter: `ssh-keygen -t rsa -C "your_email@example.com"`
 
-2 You will get promoted for a location to save the SSH key. Copy the file path provided in parentheses and paste it into terminal
+2. You will get promoted for a location to save the SSH key. Copy the file path provided in parentheses and paste it into terminal
 
 <img src="https://s3.amazonaws.com/after-school-assets/ssh-key-location.png">
 
-3 Keep the passphrase empty. When prompted, just hit enter. You'll be prompted twice, so leave both blank
+3. Keep the passphrase empty. When prompted, just hit enter. You'll be prompted twice, so leave both blank
 
-4 In terminal, enter `eval "$(ssh-agent -s)"`. You should see back something like `Agent pid 59566`
+4. In terminal, enter `eval "$(ssh-agent -s)"`. You should see back something like `Agent pid 59566`
 
 5 In terminal, enter `ssh-add ~/.ssh/id_rsa`
 
