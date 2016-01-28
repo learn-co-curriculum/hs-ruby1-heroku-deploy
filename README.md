@@ -117,4 +117,4 @@ git commit -m "commit message"
 git push
 git push heroku master
 ```
-<a href='https://learn.co/lessons/hs-ruby1-heroku-deploy' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/hs-ruby1-heroku-deploy' title='Let's deploy!!'>Let's deploy!!</a> on Learn.co and start learning to code for free.</p>
